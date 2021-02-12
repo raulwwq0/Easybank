@@ -1,0 +1,62 @@
+@import 'variables';
+
+#footer{
+    background-color: $dark-blue;
+    font-family: $common-font;
+    min-height: 15vh;
+    display: grid;
+    align-items: center;
+
+    #footer-content{
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: grid;
+        grid-template-areas: 
+        "logo main-menu request-button"
+        "social main-menu attribution";
+        grid-template-columns: repeat(2, 25%) 50%;
+        grid-template-rows: repeat(2, 5.5vh);
+        align-items: center;
+
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .social{
+            grid-area: social;
+        }
+        
+        #footer-menu{
+            grid-area: main-menu;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            li{
+                margin: 5px;
+                a{
+                    color: $very-light-gray;
+                }
+            }
+        }
+
+        .request-btn{
+            grid-area: request-button;
+            justify-self: flex-end;
+        }
+
+        .attribution{
+            color: $grayish-blue;
+            font-size: 14px;
+            justify-self: flex-end;
+            text-align: right;
+
+            a{
+                color: $grayish-blue;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,55 @@
+@import 'variables';
+
+#header{
+    font-family: $common-font;
+    background-color: $white;
+    font-size: 15px;
+    position: relative;
+    z-index: 3;
+
+    #header-content{
+        margin: auto;
+        width: 80vw;
+        height: 90px;
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        align-items: center;
+
+        .logo{
+            justify-self: left;
+            margin-top: 5px;
+        }
+
+        ul{
+            justify-self: center;
+            li{
+                display: block;
+                float: left;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                
+                a{
+                    display: block;
+                    color: $grayish-blue;
+                    font-weight: $more-lighter-weight;
+                    height: 90px;
+                    line-height: 90px;
+                    transition: all 150ms;
+                }
+
+                a:hover{
+                    height: 85px;
+                    border-bottom: 5px solid transparent;
+                    border-image: linear-gradient(to right, $lime-green, $bright-cyan) 1;
+                }
+            }
+        }
+
+        .request-btn{
+            position: absolute;
+            right: 10vw;
+            top: 25px;
+            justify-self: right;
+        }
+    }
+}

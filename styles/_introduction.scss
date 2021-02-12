@@ -1,0 +1,45 @@
+@import 'variables';
+
+#introduction{
+    display: grid;
+    grid-template-columns: 42% 58%;
+    font-family: $common-font;
+    min-height: 55vh;
+    background-color: $very-light-gray;
+    #intro-text{
+        margin-left: 10vw;
+        align-self: center;
+        h1{
+            font-size: 55px;
+            font-weight: $more-lighter-weight;
+        }
+    
+        p{
+            font-size: $common-font-size;
+            font-weight: $more-lighter-weight;
+            color: $grayish-blue;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding-right: 1vw;
+            line-height: $line-height;
+        }
+
+        .request-btn{
+            a{
+                font-weight: $medium-weight;
+            }
+        }
+    }
+
+    #phones{
+        background-image: url('../images/bg-intro-desktop.svg');
+        background-position-y: -270px;
+
+
+        img{
+            position: absolute;
+            top: -30px;
+            right: -130px;
+        }
+    }
+}
