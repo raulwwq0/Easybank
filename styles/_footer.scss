@@ -3,11 +3,16 @@
 #footer{
     background-color: $dark-blue;
     font-family: $common-font;
-    min-height: 15vh;
-    display: grid;
+    display: flex;
+    flex: 0 0 auto;
+
+    min-height: 0px;
     align-items: center;
 
     #footer-content{
+        flex: 1 1 auto;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         width: 80vw;
         margin-left: 10vw;
         margin-right: 10vw;
