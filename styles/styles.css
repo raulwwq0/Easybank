@@ -103,7 +103,7 @@
   display: grid;
   grid-template-columns: 42% 58%;
   font-family: PublicSans;
-  min-height: 55vh;
+  min-height: 65vh;
   background-color: #fafafa;
 }
 #introduction #intro-text {
@@ -128,11 +128,11 @@
 }
 #introduction #phones {
   background-image: url("../images/bg-intro-desktop.svg");
-  background-position-y: -270px;
+  background-position-y: -260px;
 }
 #introduction #phones img {
   position: absolute;
-  top: -30px;
+  top: -20px;
   right: -130px;
 }
 

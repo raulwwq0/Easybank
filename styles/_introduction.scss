@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 42% 58%;
     font-family: $common-font;
-    min-height: 55vh;
+    min-height: 65vh;
     background-color: $very-light-gray;
     #intro-text{
         margin-left: 10vw;
@@ -33,12 +33,12 @@
 
     #phones{
         background-image: url('../images/bg-intro-desktop.svg');
-        background-position-y: -270px;
+        background-position-y: -260px;
 
 
         img{
             position: absolute;
-            top: -30px;
+            top: -20px;
             right: -130px;
         }
     }
