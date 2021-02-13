@@ -435,9 +435,6 @@
     width: 100%;
   }
 
-  #footer {
-    min-height: 40vh;
-  }
   #footer #footer-content {
     grid-template-areas: "logo" "social" "main-menu" "request-button" "attribution";
     grid-template-columns: 1fr;
